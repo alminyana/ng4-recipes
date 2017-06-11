@@ -12,7 +12,7 @@
         <p class="list-group-item-text">{{one.description}}</p>
       </div>
       <div class="pull-right">
-        <!-- src attribute use property binding instead of string interpolation -->
+        <!-- src attribute use property binding (for attributes) instead of string interpolation but both work!!-->
         <img
         [src]="one.imagePath"
         alt="{{one.name}}"
