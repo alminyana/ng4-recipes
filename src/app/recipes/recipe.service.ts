@@ -33,6 +33,15 @@ export class RecipeService {
     return this.recipes.slice(); //slice() hace una copia del array recipes que es un atributo privado de la clase
   }
 
+  getRecipeById(id: number) {
+    const recipe: Recipe = this.recipes.find(
+      (recipe: Recipe) => {
+        return recipe.id === id;
+      }
+    );
+    return recipe;
+  }
+
   addIngredientsToShoppingList(ingredients: Ingredient[]){
     this.shopping.addIngredients(ingredients);
 
