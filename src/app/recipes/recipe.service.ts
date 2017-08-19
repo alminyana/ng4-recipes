@@ -14,7 +14,7 @@ export class RecipeService {
       0,
       'A Test Recipe',
       'This is a simply test',
-      'http://images.media-allrecipes.com/userphotos/560x315/662790.jpg',
+      'http://images.media-allrecipes.com/userphotos/250x250/00/83/36/833634.jpg',
       [ new Ingredient('brad', 4),
         new Ingredient('drinks', 10)]),
     new Recipe(
@@ -22,7 +22,14 @@ export class RecipeService {
       'A Second Recipe',
       'This is a Second Recipe test',
       'http://images.media-allrecipes.com/userphotos/250x250/00/69/35/693521.jpg',
-      [new Ingredient('oil', 2), new Ingredient('salt', 1)])
+      [new Ingredient('oil', 2), new Ingredient('salt', 1)]),
+      new Recipe(
+        2,
+        'lalalala',
+        'lelelele',
+        'http://images.media-allrecipes.com/userphotos/250x250/2573174.jpg',
+        [new Ingredient('Anchoas', 10), new Ingredient('Pan', 3)]
+      )
   ];
 
   constructor(private shopping: ShoppingListService){
