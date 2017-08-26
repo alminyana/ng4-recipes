@@ -1,7 +1,7 @@
 <a
-  href="#"
   class="list-group-item clearfix recipe-item"
-  (click)="onRecipeSelected()">
+  [routerLink]="[recipe.id]"
+  routerLinkActive='active'>
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{recipe.name}}</h4>
     <p class="list-group-item-text">{{recipe.description}}</p>
@@ -9,6 +9,8 @@
   <div class="pull-right">
     <!-- src attribute use property binding (for attributes) instead of string interpolation but both work!!-->
     <img
+    width="100px"
+    height="auto"
     [src]="recipe.imagePath"
     alt="{{recipe.name}}"
     class="img-responsive"
